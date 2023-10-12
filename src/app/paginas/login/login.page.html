@@ -1,0 +1,67 @@
+<div class="main">
+  <ion-content [fullscreen]="true" overflow-scroll="false" class="contenedor">
+   
+    <div style="display: flex; justify-content: center;background: rgb(96,46,102);
+    background: linear-gradient(180deg, rgba(96,46,102,1) 0%, rgba(22,19,20,1) 80%);
+    ; padding: 20px;">
+      <ion-radio-group value="primary" style="color: white;">
+        <ion-radio style="font-size: 35px;" (click)="CargaUsuarios(1)">👩🏻‍💻 ADMIN &nbsp;&nbsp;&nbsp;&nbsp; </ion-radio><br />
+        <ion-radio style="font-size: 35px;" (click)="CargaUsuarios(2)">👥 USUARIO </ion-radio><br />
+        <ion-radio style="font-size: 35px;" (click)="CargaUsuarios(3)">👻 INVITADO </ion-radio><br />
+      </ion-radio-group>
+    </div>
+
+    <ion-card class="card">
+      <ion-card-content>
+        <form (submit)="Login()">
+          <ion-item class="ion-item">
+            <ion-icon name="person" class="icon-login"></ion-icon>
+            <ion-input style="font-size: 20px;font-family: Arial;" class="ionput" aria-label="Correo" [formControl]="correo" [clearOnEdit]="true" type="email"
+              required placeholder="Correo" errorText="Correo invalido" helperText="Ingrese un correo valido"
+              full></ion-input>
+          </ion-item>
+          <div class="alert alert-danger mensajeError mt-1 bi bi-exclamation-octagon-fill"
+            [hidden]="correo.valid || (correo.pristine && correo.untouched)">
+  
+            <span *ngIf="correo.errors?.['required']">
+              Este campo es obligatorio
+            </span>
+  
+            <span *ngIf="correo.errors?.['email']">
+              Debe contener @
+            </span>
+          </div>
+          <br>
+          <ion-item class="ion-item">
+            <ion-icon name="key" class="icon-login"></ion-icon>
+            <ion-input  style="font-size: 20px;font-family: Arial;" class="ionput"  [formControl]="password" aria-label="Contraseña" [clearOnEdit]="true" type="password" required
+              placeholder="Contraseña" [counter]="true" maxlength="8"
+              errorText="Contraseña incorrecta" full></ion-input>
+          </ion-item>
+  
+          <div class="alert alert-danger mensajeError mt-1 bi bi-exclamation-octagon-fill"
+            [hidden]="password.valid || (password.pristine && password.untouched)">
+  
+            <span *ngIf="password.errors?.['required']">
+              Este campo es obligatorio
+            </span>
+  
+            <span *ngIf="password.errors?.['minlength']">
+              Debe tener como minimo 6 caracteres
+            </span>
+  
+          </div>
+          <br>
+          <div>
+            <button style="margin-top: 45px;margin-left: 35px;font-family: Arial; font-size: 40px; height: 300px;border-radius: 50%; padding: 43px;" expand="block" type="submit"> INGRESAR </button>
+          </div>
+  
+        </form>
+      </ion-card-content>
+    </ion-card>
+    
+    <div *ngIf="showSpinner" class="custom-spinner">
+      <img src="/assets/images/icon.png"/>
+    </div>
+  </ion-content>
+  </div>

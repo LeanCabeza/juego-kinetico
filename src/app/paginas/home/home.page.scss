@@ -1,0 +1,104 @@
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+/* Estilos generales */
+.allA {
+  background: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 25px;
+  color: white;
+}
+
+.allB {
+  background: #86ddbc;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 25px;
+  color: white;
+}
+
+/* Estilos comunes para los botones "sala-4b-btn" y "sala-4a-btn" */
+.sala-4b-btn,
+.sala-4a-btn {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  border: 5px outset;
+  text-align: center;
+  margin-bottom: 10px;
+  height: 50vh;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Estilos para el botón "sala-4b-btn" */
+.sala-4b-btn {
+  background-color: black;
+}
+
+.sala-4b-btn:active {
+  transform: scale(0.9);
+  box-shadow: 0px 0px 25px #c3ffb4;
+}
+
+/* Estilos para el botón "sala-4a-btn" */
+.sala-4a-btn {
+  background-color: rgba(133, 13, 0, 255);
+}
+
+.sala-4a-btn:active {
+  transform: scale(0.9);
+  box-shadow: 0px 0px 25px #ff3232;
+}
+
+/* Estilos para los encabezados h2 dentro de los botones */
+.sala-4b-btn h2,
+.sala-4a-btn h2 {
+  font-family: 'Fruinky', sans-serif;
+  line-height: 14rem;
+  border-radius: 15px;
+  color: black;
+  font-size: 30px;
+  height: 100%;
+}
+
+/* Estilos para las imágenes dentro de los botones */
+.imagen-boton {
+  width: 300px;
+  height: 300px;
+}
+
+/* Estilos para el contenedor de botones */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+  background-color: black;
+}
+
+
+/* Estilos para el segmento activo dentro de ion-segment */
+ion-grid {
+  background-color: black;
+  height: 100%;
+
+  ion-row {
+    height: 24vh;
+  }
+}
+
+.Podio {
+  overflow-y: auto;
+}
