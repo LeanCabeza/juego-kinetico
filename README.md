@@ -1,28 +1,25 @@
-# Alarma de Robo
+# Juego de Movimiento Kinetico DC vs Marvel
 
-Este es el repositorio del proyecto "Alarma de Robo", diseñado para proteger tu dispositivo y alertarte en caso de intento de robo.
+Este repositorio alberga el proyecto "Juego de Movimiento Kinetico" 
 
-![Pantallas_Alarma](https://github.com/LeanCabeza/alarma-de-robo/assets/60674663/ba6d030b-2b88-43df-97bb-af9691b3e373)
+![demoKinetico](https://github.com/LeanCabeza/juego-kinetico/assets/60674663/90532390-0a92-4bab-82b8-1212e8195079)
 
+### Ingreso de Usuario
+Antes de comenzar a jugar, el usuario debe loggearse proporcionando sus datos de acceso, como nombre de usuario y contraseña.
 
-## Requisitos
+### Pantalla Principal
+En la pantalla principal de la aplicación, se mostrarán dos botones que ocuparán toda la pantalla: "DC" y "MARVEL". El usuario podrá elegir una de estas franquicias.
 
-1. Ingresar un usuario registrado en la base de datos.
+### Elección de Personaje
+Después de seleccionar una franquicia, el usuario podrá elegir a su personaje favorito de esa franquicia. Una vez seleccionado, el juego comenzará.
 
-2. La aplicación tendrá un único botón que ocupará toda la pantalla y permitirá activar y desactivar el detector de robo.
+### Juego en Movimiento
+Al iniciar el juego, el personaje elegido aparecerá en el centro de la pantalla, y un temporizador (TIMER) comenzará a contar el tiempo. El objetivo del juego es mover al personaje por la pantalla utilizando los sensores de movimiento del dispositivo.
 
-3. Una vez activado, asumiendo que el dispositivo está apoyado horizontalmente sobre una mesa, se activarán las siguientes funciones:
+Reglas del Juego
+El jugador debe evitar que el personaje toque los bordes de la pantalla. Si el personaje toca un borde, el juego se detendrá y se perderá.
+Los movimientos del dispositivo controlan la dirección y velocidad del movimiento del personaje.
+Se registrarán los puntos logrados por cada jugador en la base de datos.
 
-   - Al cambiar la posición a la izquierda o a la derecha, la aplicación emitirá un sonido distinto para cada lado.
-   - Al poner el dispositivo en posición vertical, se encenderá la luz durante 5 segundos y se emitirá un sonido.
-   - Al poner el dispositivo en posición horizontal, vibrará durante 5 segundos y emitirá otro sonido.
-
-4. Para desactivar la alarma, se pedirá el ingreso de una contraseña que deberá coincidir con la contraseña utilizada en el ingreso. Si no coincide, la aplicación emitirá sonidos, vibrará y encenderá la luz simultáneamente durante 5 segundos.
-
-5. Los sonidos utilizados en la aplicación se pueden grabar.
-
-### Grabación de Sonidos
-
-Ejemplo de sonidos predefinidos:
-- Al mover el dispositivo hacia la izquierda: "¡Están hurtando el dispositivo!"
-- Al mover el dispositivo hacia la derecha: "¡Epa! ¿Qué estás por hacer?"
+### Clasificación de los Mejores Registros
+La aplicación mostrará el listado de los cinco mejores registros de los jugadores, lo que permitirá a los usuarios competir por las mejores puntuaciones.
