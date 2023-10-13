@@ -2,7 +2,8 @@
 
 Este repositorio alberga el proyecto "Juego de Movimiento Kinetico" 
 
-![demoKinetico](https://github.com/LeanCabeza/juego-kinetico/assets/60674663/90532390-0a92-4bab-82b8-1212e8195079)
+![demoKinetico](https://github.com/LeanCabeza/juego-kinetico/assets/60674663/f5a25e8f-1b13-4b95-8ba3-27ef5fe47ca8)
+
 
 ### Ingreso de Usuario
 Antes de comenzar a jugar, el usuario debe loggearse proporcionando sus datos de acceso, como nombre de usuario y contraseña.
